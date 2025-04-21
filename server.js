@@ -13,10 +13,10 @@ app.get("/" ,(req, res)=>{
     return res.json({success: true})
 })
 
-
+// clg
 app.post('/webhook', (req, res) => {
     const eventData = req.body;
-
+    console.log(req);
     console.log('🔔 Webhook received:', eventData);
 
     // You can now process the eventData, e.g., store in DB, trigger something, etc.
